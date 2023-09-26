@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category1, .category2, .category3 {
+            flex: 1;
+            margin: 1%;
+            padding: 1%;
+            box-sizing: border-box;
+            background-color: grey;
+            border: 3px solid black;
+        }
+        .category1 h2 {
+            color: black;
+            background-color: salmon;
+            text-align: center;
+        }
+        .category2 h2 {
+            color: black;
+            background-color: brown;
+            text-align: center;
+        }
+        .category3 h2 {
+            color: black;
+            background-color: moccasin;
+            text-align: center;
+        }
+        .category p {
+            color: grey;
+            margin-top: 1rem;
+            max-width: max-content;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 1.5cm;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+            .category1, .category2, .category3 {
+                width: 100%;
+                margin: 2% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <div class="menu">
+        <div class="category1">
+            <h2>Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="category2">
+            <h2>Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="category3">
+            <h2>Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</body>
+</html>
